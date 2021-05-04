@@ -1,6 +1,9 @@
 package ru.netology.domain;
 
 public class Post {
+    private LikesInfo likesInfo;
+    private CommentsInfo commentsInfo;
+    private RepostsInfo repostsInfoInfo;
     private int id;
     private int ownerId;
     private int date;
@@ -11,7 +14,6 @@ public class Post {
     private String profileName;
     private String repostsButton;
     private String commentButton;
-    private String commentsInfo;
     private String text;
     private String data;
     private int fromId;
@@ -120,13 +122,6 @@ public class Post {
         this.commentButton = commentButton;
     }
 
-    public String getCommentsInfo() {
-        return commentsInfo;
-    }
-
-    public void setCommentsInfo(String commentsInfo) {
-        this.commentsInfo = commentsInfo;
-    }
 
     public String getText() {
         return text;
